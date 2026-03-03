@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JL STORE | Joias e Perfumes de Luxo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="container nav">
+      <div class="logo-wrap">
+        <img class="brand-logo" src="logo-jl-store.svg" alt="Logo da JL STORE" />
+        <div class="logo-text">
+          <strong>JL STORE</strong>
+          <span>THE ESSENCE OF MODERN LUXURY</span>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-outline" href="#catalogo">Catálogo</a>
+        <a class="btn btn-light" href="admin.html">Área Admin</a>
+      </div>
+    </nav>
+
+    <div class="container hero-content">
+      <p class="tag">Coleção Exclusiva 2026</p>
+      <h1>Joias, perfumes e acessórios que elevam seu estilo</h1>
+      <p class="subtitle">Descubra peças sofisticadas e fragrâncias marcantes para transformar cada momento em presença e personalidade.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#catalogo">Comprar agora</a>
+        <a class="btn btn-light" href="#cart">Ver carrinho</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <div class="promo-banners">
+        <article class="promo-banner banner-1">
+          <p>DESCONTO DE ATÉ <strong>30%</strong> NO WHATSAPP</p>
+        </article>
+        <article class="promo-banner banner-2">
+          <p>DESCONTO DE ATÉ <strong>30%</strong> NO WHATSAPP</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="catalogo" class="section container">
+      <div class="section-heading">
+        <p class="tag">Categorias</p>
+        <h2>Escolha seu universo de luxo</h2>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Categorias de produtos">
+        <button class="tab-btn active" data-category="joias" role="tab" aria-selected="true" type="button">Joias</button>
+        <button class="tab-btn" data-category="perfumes" role="tab" aria-selected="false" type="button">Perfumes</button>
+        <button class="tab-btn" data-category="acessorios" role="tab" aria-selected="false" type="button">Acessórios</button>
+      </div>
+
+      <div class="cards" id="products-grid"></div>
+    </section>
+
+    <section id="cart" class="section container cart-section">
+      <div class="section-heading">
+        <p class="tag">Seu pedido</p>
+        <h2>Carrinho de compras</h2>
+      </div>
+      <div class="cart-box">
+        <ul id="cart-items" class="cart-items"></ul>
+        <div class="cart-footer">
+          <p>Total: <strong id="cart-total">R$ 0,00</strong></p>
+          <div class="form-actions">
+            <button class="btn btn-light" id="clear-cart" type="button">Limpar carrinho</button>
+            <a class="btn" id="checkout-whatsapp" href="https://wa.me/5549999740039" target="_blank" rel="noopener noreferrer">Finalizar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="revenda" class="section consignado">
+      <div class="container consignado-wrap">
+        <div>
+          <p class="tag">Programa de revenda</p>
+          <h2>Revenda no consignado e ganhe até <span>40%</span> sem investir nada</h2>
+          <p class="subtitle">Receba joias, perfumes e acessórios selecionados, venda no seu ritmo e fique com até 40% de comissão.</p>
+          <ul>
+            <li>✔ Sem investimento inicial</li>
+            <li>✔ Comissões de até 40%</li>
+            <li>✔ Suporte para vendas no WhatsApp e Instagram</li>
+          </ul>
+        </div>
+        <a class="btn" href="https://wa.me/5549999740039?text=Ol%C3%A1%2C%20quero%20participar%20da%20revenda%20consignada%20da%20JL%20STORE" target="_blank" rel="noopener noreferrer">Quero revender</a>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-btn" href="https://wa.me/5549999740039" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">WhatsApp</a>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 JL STORE. Todos os direitos reservados.</p>
+      <a href="#">Instagram @jlstore</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

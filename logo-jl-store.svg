@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Logo JL STORE</title>
+  <desc id="desc">Monograma JL dourado com losango escuro estilizado</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8dd9c"/>
+      <stop offset="0.5" stop-color="#e0ad4d"/>
+      <stop offset="1" stop-color="#fff3d3"/>
+    </linearGradient>
+    <linearGradient id="diamond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a3a3d"/>
+      <stop offset="0.45" stop-color="#121317"/>
+      <stop offset="1" stop-color="#4d4f56"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="320" height="220" fill="transparent"/>
+  <polygon points="160,28 56,94 160,180 264,94" fill="url(#diamond)" stroke="#9d9ea2" stroke-opacity="0.5"/>
+  <ellipse cx="160" cy="112" rx="128" ry="40" fill="none" stroke="url(#gold)" stroke-width="7"/>
+  <text x="160" y="126" text-anchor="middle" font-size="92" font-family="Cormorant Garamond, serif" font-weight="700" fill="url(#gold)">JL</text>
+</svg>
