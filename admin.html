@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JL STORE | Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="section container">
+    <div class="section-heading">
+      <p class="tag">Administração</p>
+      <h1>Painel da JL STORE</h1>
+      <p class="subtitle">Faça login para editar e adicionar produtos da loja.</p>
+    </div>
+
+    <section id="login-section" class="admin-panel">
+      <form id="login-form" class="lead-form admin-login-form">
+        <label for="admin-user">Usuário</label>
+        <input id="admin-user" type="text" placeholder="admin" required />
+
+        <label for="admin-pass">Senha</label>
+        <input id="admin-pass" type="password" placeholder="••••••" required />
+
+        <button class="btn" type="submit">Entrar</button>
+        <p id="login-error" class="login-error" hidden>Usuário ou senha inválidos.</p>
+      </form>
+    </section>
+
+    <section id="panel-section" class="admin-panel" hidden>
+      <div class="admin-header-row">
+        <h2>Painel de produtos</h2>
+        <button class="btn btn-light" id="logout-btn" type="button">Sair</button>
+      </div>
+      <div class="admin-layout">
+        <form id="product-form" class="lead-form">
+          <input type="hidden" id="product-id" />
+
+          <label for="product-category">Categoria</label>
+          <select id="product-category" required>
+            <option value="joias">Joias</option>
+            <option value="perfumes">Perfumes</option>
+            <option value="acessorios">Acessórios</option>
+          </select>
+
+          <label for="product-name">Nome do produto</label>
+          <input id="product-name" type="text" placeholder="Ex.: Colar Aurora" required />
+
+          <label for="product-description">Descrição</label>
+          <input id="product-description" type="text" placeholder="Ex.: Ouro 18k com ponto de luz" required />
+
+          <label for="product-price">Preço</label>
+          <input id="product-price" type="text" placeholder="Ex.: R$ 499,00" required />
+
+          <label for="product-gradient">Cor/gradiente (CSS)</label>
+          <input id="product-gradient" type="text" placeholder="linear-gradient(135deg, #624522, #d8af74)" required />
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Salvar produto</button>
+            <button class="btn btn-light" type="button" id="cancel-edit">Cancelar</button>
+          </div>
+        </form>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Categoria</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody id="products-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <p><a class="btn btn-outline" href="index.html">← Voltar para a loja</a></p>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
